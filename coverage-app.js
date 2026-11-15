@@ -34,3 +34,28 @@ const dcSearch=document.querySelector('#dc-search');
 const dcCards=[...document.querySelectorAll('.dc-card')];
 dcSearch.addEventListener('input',()=>{const terms=dcSearch.value.toLowerCase().trim().split(/\s+/).filter(Boolean);let count=0;dcCards.forEach(card=>{const show=terms.every(t=>card.dataset.search.includes(t));card.hidden=!show;if(show)count++;});document.querySelector('#dc-count').textContent=count+' of '+dcCards.length+' entries';document.querySelector('#dc-empty').hidden=count!==0;});
 document.querySelectorAll('.location-link').forEach(a=>a.addEventListener('click',()=>{const input=form.elements.location;const value=a.dataset.location;if(!input.value.includes(value))input.value=input.value?input.value+'; '+value:value;input.focus({preventScroll:true});}));
+
+// Desktop pointer menus; native details keeps touch and keyboard interaction.
+(()=>{
+ const menus=[...document.querySelectorAll('#navigation .nav-dropdown')];
+ const desktop=matchMedia('(min-width:1181px) and (hover:hover) and (pointer:fine)');
+ const timers=new Map();
+ const cancel=item=>{clearTimeout(timers.get(item));timers.delete(item);};
+ menus.forEach(item=>{
+  item.addEventListener('pointerenter',event=>{
+   if(!desktop.matches||event.pointerType==='touch')return;
+   menus.forEach(other=>{cancel(other);if(other!==item)other.open=false;});
+   item.open=true;
+  });
+  item.addEventListener('pointerleave',()=>{
+   if(!desktop.matches)return;cancel(item);
+   timers.set(item,setTimeout(()=>{
+    const focused=item.contains(document.activeElement)&&document.activeElement.matches(':focus-visible');
+    if(!focused)item.open=false;
+   },220));
+  });
+  item.addEventListener('focusin',()=>cancel(item));
+  item.addEventListener('focusout',()=>{if(desktop.matches)timers.set(item,setTimeout(()=>{if(!item.contains(document.activeElement)&&!item.matches(':hover'))item.open=false;},0));});
+ });
+ desktop.addEventListener('change',()=>menus.forEach(item=>{cancel(item);item.open=false;}));
+})();
