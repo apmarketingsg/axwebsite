@@ -68,3 +68,24 @@
  groups.forEach(g=>g.querySelector('summary').addEventListener('click',e=>{if(!mobile.matches)e.preventDefault();}));
  mobile.addEventListener('change',sync);sync();
 })();
+
+// Shared WhatsApp shortcut. The visitor reviews and sends the message in WhatsApp.
+(()=>{
+ if(document.querySelector('.whatsapp-float'))return;
+ const link=document.createElement('a');
+ link.className='whatsapp-float';
+ link.href='https://wa.me/6560111719?text='+encodeURIComponent('Hello Axclusive, I would like to enquire about your services.');
+ link.target='_blank';link.rel='noopener noreferrer';
+ link.setAttribute('aria-label','Chat with Axclusive on WhatsApp (opens in a new tab)');
+ link.innerHTML='<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13.4 7.9L3 21l1.5-4.7A9 9 0 1 1 21 11.5Z"/><path d="M8 7.5c.5 4 3 6.5 7 7l1-2-2-1-1 1c-1.5-.7-2.3-1.5-3-3l1-1-1-2-2 1Z"/></svg><span>WhatsApp us</span>';
+ document.body.append(link);document.body.classList.add('has-whatsapp-shortcut');
+ const nav=document.querySelector('#navigation');
+ const sync=()=>{
+  const mobile=matchMedia('(max-width:1180px)').matches;
+  const editing=document.activeElement?.matches('input,textarea,select,[contenteditable="true"]');
+  document.body.classList.toggle('contact-shortcut-hidden',mobile&&(nav?.classList.contains('open')||editing));
+ };
+ if(nav)new MutationObserver(sync).observe(nav,{attributes:true,attributeFilter:['class']});
+ document.addEventListener('focusin',sync);document.addEventListener('focusout',()=>setTimeout(sync,0));
+ window.addEventListener('resize',sync);sync();
+})();
