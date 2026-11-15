@@ -20,3 +20,5 @@ header .dropdown .nav-group-label{display:block;padding:12px 14px 6px;font-size:
 
 /* Grouped navigation remains reachable on shorter desktop screens. */
 @media(min-width:1181px){header .dropdown{max-height:calc(100dvh - 115px);overflow-y:auto;overscroll-behavior:contain}}
+
+.audience-links .audience-hub-link{padding-bottom:12px;border-bottom:1px solid #e8e0d8}

@@ -438,6 +438,18 @@
     {
       "source": "/sg/microsoft-365-singapore/",
       "destination": "/microsoft-365-singapore.html"
+    },
+    {
+      "source": "/sg/carriers-isps/",
+      "destination": "/carriers-isps.html"
+    },
+    {
+      "source": "/sg/hosting-cloud-providers/",
+      "destination": "/hosting-cloud-providers.html"
+    },
+    {
+      "source": "/sg/businesses-enterprises/",
+      "destination": "/businesses-enterprises.html"
     }
   ]
 }
