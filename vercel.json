@@ -86,6 +86,10 @@
     {
       "source": "/sg/managed-sd-wan-singapore/",
       "destination": "/managed-sd-wan-singapore.html"
+    },
+    {
+      "source": "/sg/global-sd-wan-coverage/",
+      "destination": "/global-sd-wan-coverage.html"
     }
   ]
 }
