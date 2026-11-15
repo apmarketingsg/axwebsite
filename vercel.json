@@ -90,6 +90,10 @@
     {
       "source": "/sg/global-sd-wan-coverage/",
       "destination": "/global-sd-wan-coverage.html"
+    },
+    {
+      "source": "/sg/managed-cdn-singapore/",
+      "destination": "/managed-cdn-singapore.html"
     }
   ]
 }
