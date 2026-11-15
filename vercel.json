@@ -24,6 +24,10 @@
   ],
   "rewrites": [
     {
+      "source": "/sg/managed-dark-fibre-dwdm-singapore/",
+      "destination": "/managed-dark-fibre-dwdm-singapore.html"
+    },
+    {
       "source": "/sg/",
       "destination": "/index.html"
     },
