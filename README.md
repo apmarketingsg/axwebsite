@@ -1,24 +1,21 @@
-# Axclusive website preview
+# Axclusive preview — launch handoff
 
-Static homepage, corrected IP transit page and optimized Dedicated Internet Access page, prepared 11 November 2026.
+Updated 15 November 2026. The preview contains 17 HTML pages, not the complete existing website.
 
-## Deploy from GitHub to Vercel
-1. Upload this folder's contents to the intended GitHub repository (not the enclosing ZIP).
-2. In Vercel, add a new project and import that repository.
-3. Choose framework preset **Other**. Root directory: repository root. No build command. Output directory: **.** (repository root). These settings are included in vercel.json.
-4. Deploy and review /sg/, /sg/ip-transit-singapore/ and /sg/dedicated-internet-access-singapore/.
-5. Decide who should have access using Vercel's deployment protection settings. A private GitHub repository does not by itself make its deployed website private.
+## Preview behaviour
+All pages intentionally retain noindex/nofollow metadata, the Vercel X-Robots-Tag header and robots.txt Disallow: /. Canonical URLs point to their intended axclusive.com destinations. The sitemap lists the 17 intended production URLs; merge these into the complete production sitemap at launch. Social previews use the published preview logo asset; update og:image to the production asset URL when migrating.
 
-## Behaviour
-- The four draft pages link to one another on the preview host.
-- Other service and resource links go to the existing axclusive.com website.
-- Homepage enquiries link to the existing contact page. The IP transit and DIA forms prepare a WhatsApp message for the visitor to review and send.
-- There is no CRM, form-storage or email backend in this project.
-- Search indexing is disabled in HTML, response headers and robots.txt. This is not an access control.
-- No ChatGPT sign-in integration or Sites credentials are included.
-- Do not attach the main axclusive.com domain to this four-page preview. It is not a migration of the complete existing website.
-- Before a production release, integrate with the complete site, verify forms/analytics and remove staging indexing restrictions while retaining correct canonical URLs.
+The top navigation and footer expose Managed SD-WAN and Global SD-WAN Coverage. Both SD-WAN hero sections have direct map links. Map popups describe availability as subject to confirmation.
 
-Sources: https://vercel.com/docs/git/vercel-for-github and https://vercel.com/docs/builds/configure-a-build
+## Required before main-site migration
+- Preserve existing About, Contact, Partners, Colocation, blog, insights, legal and SIP calculator pages and all existing assets. Do not replace the entire existing site with this folder.
+- Retain existing URLs wherever possible. Prepare permanent redirects only for URLs that change; verify legacy traffic and backlinks against the full production sitemap/Search Console export.
+- Remove all three indexing restrictions only on production. Keep the preview blocked.
+- Enquiry forms prepare WhatsApp messages; they do not store submissions, send email or integrate with a CRM. Verify receipt using an approved test and agree the lead-handling process.
+- Configure the chosen analytics property and conversion events; no analytics account identifier is currently supplied.
+- Add approved customer proof and public certification/licence references when supplied; do not invent endorsements or licence numbers.
+- Compress the lazy-loaded 1.23 MB IP-transit network diagram while preserving readable labels.
 
-Leased line preview: /sg/leased-line-singapore/. Includes private connectivity, optional encryption and optional managed service.
+## Checks completed
+17 pages checked at 390px, plus homepage, both SD-WAN pages, Singapore directory, DIA and SIP pages at 320px. No persistent page overflow found. Mobile menu and map popup tested. Internal link/anchor/asset references checked. Production canonical URLs corrected across all pages.
+Network spot checks confirmed gzip HTML, 200 responses, and retained noindex response headers. This is not a throttled Lighthouse audit or real-user Core Web Vitals measurement.
