@@ -454,6 +454,10 @@
     {
       "source": "/sg/international-private-line-iplc-iepl/",
       "destination": "/international-private-line-iplc-iepl.html"
+    },
+    {
+      "source": "/sg/cloud-connectivity-singapore/",
+      "destination": "/cloud-connectivity-singapore.html"
     }
   ]
 }
