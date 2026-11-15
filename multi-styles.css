@@ -21,3 +21,25 @@
 .connection-port small{font-size:11px;line-height:1.4;color:#666}
 .connection-visual>p{font-size:11px;line-height:1.6;margin:14px auto 0;max-width:420px}
 @media(max-width:480px){.connection-site{padding:15px 8px 12px}.connection-ports{gap:6px}.connection-ports:after{left:calc((100% - 12px)/6);right:calc((100% - 12px)/6)}.connection-port strong{font-size:12px}.connection-port small{font-size:10px}.connection-device{font-size:14px}}
+
+/* MSSC offers a choice of handoff, with optional dual-circuit resilience. */
+.connection-visual .connection-circuit{height:55px}
+.connection-single{border:1px solid #be7d4a;background:#fff8ee;border-radius:12px;padding:12px 10px}
+.connection-option-label{display:block;font-size:11px;font-weight:700;line-height:1.5;margin-bottom:8px}
+.connection-single-body{display:flex;align-items:center;justify-content:center;gap:12px}
+.connection-single-body .port-socket{flex-shrink:0}
+.connection-single-body strong{font-size:13px;line-height:1.4}
+.connection-single-body small{display:block;font-size:11px;line-height:1.5;margin-top:4px}
+.connection-or{font-size:10px;font-weight:700;color:#94501f;letter-spacing:.08em;margin:9px 0}
+.connection-device .connection-option-label{margin-bottom:5px}
+.connection-visual .connection-device{padding:12px 8px;max-width:none}
+.connection-visual .connection-network{padding:14px 10px}
+.connection-visual .connection-ports{padding-top:30px}
+.connection-visual .connection-ports:before{height:15px}
+.connection-visual .connection-ports:after{top:14px}
+.connection-visual .connection-port:before{height:16px;top:-17px}
+.connection-visual .connection-port{padding:10px 5px}
+.connection-ha{border:1px dashed #be7d4a;border-radius:12px;padding:10px;margin:12px auto 0;background:#fff8ee}
+.connection-ha strong{font-size:13px}
+.connection-ha small{display:block;font-size:11px;line-height:1.5;margin-top:4px}
+@media(max-width:480px){.connection-single-body{gap:8px}.connection-single-body strong{font-size:12px}.connection-single-body small{font-size:10px}}
