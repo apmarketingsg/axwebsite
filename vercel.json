@@ -118,6 +118,306 @@
     {
       "source": "/sg/resources/insights/",
       "destination": "/insights.html"
+    },
+    {
+      "source": "/sg/resources/insights/singapore-to-china-high-latency/",
+      "destination": "/article-singapore-to-china-high-latency.html"
+    },
+    {
+      "source": "/sg/resources/insights/singapore-sao-paulo-latency/",
+      "destination": "/article-singapore-sao-paulo-latency.html"
+    },
+    {
+      "source": "/sg/resources/insights/internet-service-provider-singapore/",
+      "destination": "/article-internet-service-provider-singapore.html"
+    },
+    {
+      "source": "/sg/resources/blog/beyond-singapores-borders-how-axclusives-international-network-delivers-true-end-to-end-connectivity/",
+      "destination": "/article-beyond-singapores-borders-how-axclusives-international-network-delivers-true-end-to-end-connectivity.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-sip-trunking/",
+      "destination": "/article-what-is-sip-trunking.html"
+    },
+    {
+      "source": "/sg/resources/blog/break-the-speed-barrier-next-gen-high-speed-building-to-building-connectivity-in-singapore/",
+      "destination": "/article-break-the-speed-barrier-next-gen-high-speed-building-to-building-connectivity-in-singapore.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-last-mile-connectivity/",
+      "destination": "/article-what-is-last-mile-connectivity.html"
+    },
+    {
+      "source": "/sg/resources/blog/how-internet-works/",
+      "destination": "/article-how-internet-works.html"
+    },
+    {
+      "source": "/sg/resources/blog/choosing-the-best-outgoing-path-for-your-internet-connection/",
+      "destination": "/article-choosing-the-best-outgoing-path-for-your-internet-connection.html"
+    },
+    {
+      "source": "/sg/resources/blog/demystifying-internet-in-singapore-5-myths-every-business-should-know/",
+      "destination": "/article-demystifying-internet-in-singapore-5-myths-every-business-should-know.html"
+    },
+    {
+      "source": "/sg/resources/blog/cloudflare-axclusive/",
+      "destination": "/article-cloudflare-axclusive.html"
+    },
+    {
+      "source": "/sg/resources/blog/cisco-duo-axclusive/",
+      "destination": "/article-cisco-duo-axclusive.html"
+    },
+    {
+      "source": "/sg/resources/blog/are-you-in-equinix-sg-1-and-global-switch-singapore-heres-the-best-way-to-interconnect-your-network/",
+      "destination": "/article-are-you-in-equinix-sg-1-and-global-switch-singapore-heres-the-best-way-to-interconnect-your-network.html"
+    },
+    {
+      "source": "/sg/resources/blog/why-is-your-international-internet-connectivity-slow/",
+      "destination": "/article-why-is-your-international-internet-connectivity-slow.html"
+    },
+    {
+      "source": "/sg/resources/blog/tcp-vs-udp/",
+      "destination": "/article-tcp-vs-udp.html"
+    },
+    {
+      "source": "/sg/resources/blog/voip-vs-landline/",
+      "destination": "/article-voip-vs-landline.html"
+    },
+    {
+      "source": "/sg/resources/blog/pri-and-sip-trunking/",
+      "destination": "/article-pri-and-sip-trunking.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-broadband-internet/",
+      "destination": "/article-what-is-broadband-internet.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-cold-potato-routing/",
+      "destination": "/article-what-is-cold-potato-routing.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-satellite-internet/",
+      "destination": "/article-what-is-satellite-internet.html"
+    },
+    {
+      "source": "/sg/resources/blog/pbx-vs-voip/",
+      "destination": "/article-pbx-vs-voip.html"
+    },
+    {
+      "source": "/sg/resources/blog/cisco-equipment-axclusive/",
+      "destination": "/article-cisco-equipment-axclusive.html"
+    },
+    {
+      "source": "/sg/resources/blog/cloudflare-magic-transit/",
+      "destination": "/article-cloudflare-magic-transit.html"
+    },
+    {
+      "source": "/sg/resources/blog/voip-call-quality/",
+      "destination": "/article-voip-call-quality.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-tcp/",
+      "destination": "/article-what-is-tcp.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-bandwidth-throttling/",
+      "destination": "/article-what-is-bandwidth-throttling.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-network-jitter/",
+      "destination": "/article-what-is-network-jitter.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-packet-in-networking/",
+      "destination": "/article-what-is-packet-in-networking.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-internet-protocol/",
+      "destination": "/article-what-is-internet-protocol.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-an-extranet/",
+      "destination": "/article-what-is-an-extranet.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-cable-internet/",
+      "destination": "/article-what-is-cable-internet.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-load-balancing/",
+      "destination": "/article-what-is-load-balancing.html"
+    },
+    {
+      "source": "/sg/resources/blog/sip-trunking-vs-voip/",
+      "destination": "/article-sip-trunking-vs-voip.html"
+    },
+    {
+      "source": "/sg/resources/blog/internet-backbone/",
+      "destination": "/article-internet-backbone.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-network-layer/",
+      "destination": "/article-what-is-network-layer.html"
+    },
+    {
+      "source": "/sg/resources/blog/how-does-a-router-work/",
+      "destination": "/article-how-does-a-router-work.html"
+    },
+    {
+      "source": "/sg/resources/blog/network-attack/",
+      "destination": "/article-network-attack.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-overlay-network/",
+      "destination": "/article-what-is-overlay-network.html"
+    },
+    {
+      "source": "/sg/resources/blog/hub-and-spoke-network/",
+      "destination": "/article-hub-and-spoke-network.html"
+    },
+    {
+      "source": "/sg/resources/blog/cwdm-vs-dwdm/",
+      "destination": "/article-cwdm-vs-dwdm.html"
+    },
+    {
+      "source": "/sg/resources/blog/voip-vs-ucaas/",
+      "destination": "/article-voip-vs-ucaas.html"
+    },
+    {
+      "source": "/sg/resources/blog/sd-wan-vs-mpls/",
+      "destination": "/article-sd-wan-vs-mpls.html"
+    },
+    {
+      "source": "/sg/resources/blog/dark-fiber-vs-lit-fiber/",
+      "destination": "/article-dark-fiber-vs-lit-fiber.html"
+    },
+    {
+      "source": "/sg/resources/blog/local-internet-breakout/",
+      "destination": "/article-local-internet-breakout.html"
+    },
+    {
+      "source": "/sg/resources/blog/400g-dwdm/",
+      "destination": "/article-400g-dwdm.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-an-ethernet-switch/",
+      "destination": "/article-what-is-an-ethernet-switch.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-a-ddos-attack/",
+      "destination": "/article-what-is-a-ddos-attack.html"
+    },
+    {
+      "source": "/sg/resources/blog/dos-vs-ddos-attacks/",
+      "destination": "/article-dos-vs-ddos-attacks.html"
+    },
+    {
+      "source": "/sg/resources/blog/http-flood-ddos-attack/",
+      "destination": "/article-http-flood-ddos-attack.html"
+    },
+    {
+      "source": "/sg/resources/blog/user-datagram-protocol/",
+      "destination": "/article-user-datagram-protocol.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-ddos-protection/",
+      "destination": "/article-what-is-ddos-protection.html"
+    },
+    {
+      "source": "/sg/resources/blog/how-to-prevent-ddos-attack/",
+      "destination": "/article-how-to-prevent-ddos-attack.html"
+    },
+    {
+      "source": "/sg/resources/blog/cloudflare-magic-transit-ddos-protection/",
+      "destination": "/article-cloudflare-magic-transit-ddos-protection.html"
+    },
+    {
+      "source": "/sg/resources/blog/cloudflare-and-fastnetmon-ddos-protection/",
+      "destination": "/article-cloudflare-and-fastnetmon-ddos-protection.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-blackhole-routing/",
+      "destination": "/article-what-is-blackhole-routing.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-redundant-routing/",
+      "destination": "/article-what-is-redundant-routing.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-packet-loss/",
+      "destination": "/article-what-is-packet-loss.html"
+    },
+    {
+      "source": "/sg/resources/blog/internet-exchange-point/",
+      "destination": "/article-internet-exchange-point.html"
+    },
+    {
+      "source": "/sg/resources/blog/how-cdn-providers-are-changing-internet-behavior/",
+      "destination": "/article-how-cdn-providers-are-changing-internet-behavior.html"
+    },
+    {
+      "source": "/sg/resources/blog/how-axclusive-helps-korean-companies-improve-global-connectivity/",
+      "destination": "/article-how-axclusive-helps-korean-companies-improve-global-connectivity.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-wdm/",
+      "destination": "/article-what-is-wdm.html"
+    },
+    {
+      "source": "/sg/resources/blog/coherent-dwdm/",
+      "destination": "/article-coherent-dwdm.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-vxlan/",
+      "destination": "/article-what-is-vxlan.html"
+    },
+    {
+      "source": "/sg/resources/blog/ai-infrastructure-for-model-training/",
+      "destination": "/article-ai-infrastructure-for-model-training.html"
+    },
+    {
+      "source": "/sg/resources/blog/ai-training-vs-ai-inferencing-network-infrastructure/",
+      "destination": "/article-ai-training-vs-ai-inferencing-network-infrastructure.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-hosted-voip/",
+      "destination": "/article-what-is-hosted-voip.html"
+    },
+    {
+      "source": "/sg/resources/blog/voip-bandwidth/",
+      "destination": "/article-voip-bandwidth.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-low-latency/",
+      "destination": "/article-what-is-low-latency.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-dwdm/",
+      "destination": "/article-what-is-dwdm.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-peering/",
+      "destination": "/article-what-is-peering.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-bgp/",
+      "destination": "/article-what-is-bgp.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-mpls/",
+      "destination": "/article-what-is-mpls.html"
+    },
+    {
+      "source": "/sg/resources/blog/what-is-session-border-controller/",
+      "destination": "/article-what-is-session-border-controller.html"
+    },
+    {
+      "source": "/sg/resources/blog/ddos-mitigation/",
+      "destination": "/article-ddos-mitigation.html"
+    },
+    {
+      "source": "/sg/resources/blog/rtt-in-networking/",
+      "destination": "/article-rtt-in-networking.html"
     }
   ]
 }
