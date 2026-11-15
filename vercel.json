@@ -94,6 +94,10 @@
     {
       "source": "/sg/managed-cdn-singapore/",
       "destination": "/managed-cdn-singapore.html"
+    },
+    {
+      "source": "/sg/colocation/",
+      "destination": "/colocation.html"
     }
   ]
 }
