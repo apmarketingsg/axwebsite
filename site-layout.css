@@ -67,3 +67,6 @@ header .service-menu-group a small{font-size:11px;margin-top:3px}
  header .service-menu-group{border-bottom:1px solid #e8e0d8!important}
  header .service-menu-column:last-child>.service-menu-group:last-child{border-bottom:0!important}
 }
+
+/* Shared expanded footer */
+footer .footer-expanded{grid-template-columns:1.1fr 1fr 1fr 1fr;gap:32px}footer .footer-expanded>div{min-width:0}footer .footer-expanded a{overflow-wrap:anywhere}footer .footer-expanded .footer-brand{display:block;grid-column:auto}footer .footer-certification{margin-top:24px}footer .footer-certification img{width:140px;height:auto;background:#fff;border-radius:8px;padding:8px}footer .footer-certification p{margin-top:8px;font-size:12px}@media(max-width:900px){footer .footer-expanded{grid-template-columns:1fr 1fr;gap:32px}}@media(max-width:520px){footer .footer-expanded{grid-template-columns:1fr;gap:24px}footer .footer-expanded h3{margin-bottom:12px}footer .footer-expanded>div>a:not(:has(img)){font-size:14px;margin:10px 0}}
