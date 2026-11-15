@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="/multi-styles.css">
 <link rel="stylesheet" href="/site-layout.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Managed Optical Fiber Network (MOFN)", "description": "Managed Optical Fiber Network (MOFN) in Singapore. Axclusive arranges fibre, optical equipment and ongoing management for enterprise, hosting and ISP networks.", "url": "https://axclusive.com/sg/managed-dark-fibre-dwdm-singapore/", "provider": {"@type": "Organization", "name": "Axclusive Pte Ltd", "url": "https://axclusive.com/sg/"}, "areaServed": {"@type": "Country", "name": "Singapore"}}</script>
-<link rel="stylesheet" href="/private-connectivity.css"></head>
+<link rel="stylesheet" href="/private-connectivity.css"><link rel="stylesheet" href="/mofn-diagram.css"></head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="header"><div class="nav-shell">
@@ -38,11 +38,16 @@
         <p>Need more than a connection between two sites? Axclusive’s Managed Optical Fiber Network (MOFN) brings the fibre, optical equipment, setup and ongoing network management together. It suits enterprises, hosting providers and ISPs that want an optical network built around their capacity and growth plans.</p>
         <div class="actions"><a class="button" href="#quote">Plan my managed optical network <span aria-hidden="true">↗</span></a></div>
       </div>
-      <div class="connection-visual">
-        <div class="connection-destinations"><span>Site A</span><span>Site B</span></div>
-        <div class="connection-spine">Fibre connection<br><small>Optical equipment at each site</small></div>
-        <div class="connection-cpe">Axclusive<br><small>Arrange · set up · manage</small></div>
-      </div>
+      <figure class="mofn-bundle" aria-labelledby="mofn-diagram-title">
+        <figcaption id="mofn-diagram-title">Your managed optical network<span>Dark fibre + DWDM equipment + managed service</span></figcaption>
+        <div class="mofn-sites">
+          <div class="mofn-site"><span class="mofn-site-name">Site A</span><div class="mofn-equipment"><svg viewBox="0 0 48 32" aria-hidden="true"><rect x="2" y="3" width="44" height="26" rx="4"/><path d="M8 11h3m4 0h3m4 0h3M8 21h32"/></svg><strong>DWDM optical equipment</strong><small>Installed and configured</small></div></div>
+          <div class="mofn-site"><span class="mofn-site-name">Site B</span><div class="mofn-equipment"><svg viewBox="0 0 48 32" aria-hidden="true"><rect x="2" y="3" width="44" height="26" rx="4"/><path d="M8 11h3m4 0h3m4 0h3m-17 10h32"/></svg><strong>DWDM optical equipment</strong><small>Installed and configured</small></div></div>
+        </div>
+        <div class="mofn-fibre"><span class="mofn-component">Dark fibre between your sites</span><p>Choose the protection your network needs</p><div class="mofn-protection"><div><strong>Unprotected</strong><span class="mofn-path solid" aria-hidden="true"></span><small>Primary fibre path</small></div><div><strong>Protected</strong><span class="mofn-path solid" aria-hidden="true"></span><span class="mofn-path backup" aria-hidden="true"></span><small>Primary + protection path</small></div></div></div>
+        <div class="mofn-managed"><span class="mofn-component">Axclusive managed service</span><p>One team across the fibre and equipment</p><div class="mofn-managed-tasks"><span>Setup &amp; testing</span><span>Monitoring &amp; fault handling</span><span>Provider coordination</span><span>Changes &amp; capacity planning</span></div></div>
+        <p class="mofn-diagram-note">Choose protected or unprotected delivery. Route separation, protection arrangements and managed support are confirmed in your service proposal.</p>
+      </figure>
     </section>
   </div>
 
