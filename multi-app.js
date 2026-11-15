@@ -15,7 +15,7 @@ const status=document.querySelector('#form-status');
 function enquiry(){
  const data=new FormData(form);
  const entries=[['Name','name'],['Company','company'],['Locations to connect','location'],['Bandwidth','bandwidth'],['Requirements','requirements']];
- return 'Hello Axclusive, I would like a cloud and multi-service connectivity design.\n\n'+entries.map(([label,key])=>data.get(key).trim()?label+': '+data.get(key).trim():'').filter(Boolean).join('\n');
+ return 'Hello Axclusive, I would like a Multiple Services, Single Circuit design, including the service ports required at my site.\n\n'+entries.map(([label,key])=>data.get(key).trim()?label+': '+data.get(key).trim():'').filter(Boolean).join('\n');
 }
 form.addEventListener('submit',e=>{
  e.preventDefault();
