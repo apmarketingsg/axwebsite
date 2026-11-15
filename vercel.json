@@ -110,6 +110,14 @@
     {
       "source": "/sg/contact-us/",
       "destination": "/contact-us.html"
+    },
+    {
+      "source": "/sg/resources/blog/",
+      "destination": "/blog.html"
+    },
+    {
+      "source": "/sg/resources/insights/",
+      "destination": "/insights.html"
     }
   ]
 }
