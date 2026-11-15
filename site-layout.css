@@ -47,3 +47,23 @@ header .service-menu-group a small{display:block;font-size:12px;font-weight:400;
  header .service-menu-group[open]>summary:after{content:'−'}
  header .service-menu-group>div{padding-bottom:10px}
 }
+
+/* Compact mega-menu: independently stacked groups instead of shared tall rows. */
+header .services-menu>.dropdown{padding:18px}
+header .service-menu-column{min-width:0}
+header .service-menu-group a{padding:7px 10px;font-size:13px;line-height:1.45}
+header .service-menu-group>summary{padding:0 10px 7px;font-size:11px}
+header .service-menu-group a small{font-size:11px;margin-top:3px}
+@media(min-width:1181px){
+ header .services-menu>.dropdown{width:min(940px,calc(100vw - 64px));gap:20px;grid-template-columns:1fr 1.2fr 1fr}
+ header .service-menu-column>.service-menu-group+ .service-menu-group{margin-top:22px;padding-top:16px;border-top:1px solid #eee5de}
+}
+@media(max-width:1180px){
+ header .services-menu>.dropdown{padding:6px 12px}
+ header .service-menu-column{display:contents}
+ header .service-menu-group>summary{padding:14px 24px 14px 4px;font-size:13px}
+ header .service-menu-group a{font-size:14px;padding:10px}
+ header .service-menu-group a small{font-size:12px}
+ header .service-menu-group{border-bottom:1px solid #e8e0d8!important}
+ header .service-menu-column:last-child>.service-menu-group:last-child{border-bottom:0!important}
+}
