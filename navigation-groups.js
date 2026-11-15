@@ -1,3 +1,15 @@
+// Shared service discovery for backup and business applications.
+(()=>{
+ const nav=document.querySelector('#navigation');if(!nav)return;
+ const managed=nav.querySelector('a[href="/sg/managed-services-singapore/"]');
+ if(managed&&!nav.querySelector('a[href="/sg/backup-recovery-singapore/"]')){const a=document.createElement('a');a.href='/sg/backup-recovery-singapore/';a.textContent='Backup & Recovery';managed.after(a);}
+ const columns=nav.querySelectorAll('.service-menu-column');
+ if(columns.length&&!nav.querySelector('a[href="/sg/odoo-erp-crm-singapore/"]')){
+ const group=document.createElement('details');group.className='service-menu-group';group.innerHTML='<summary>Business Applications</summary><div><a href="/sg/odoo-erp-crm-singapore/">Odoo ERP & CRM</a><a href="/sg/enterprise-workflow-solutions-singapore/">Enterprise Workflow Solutions<small>ServiceNow-based workflows</small></a><a href="/sg/application-development-singapore/">Application Development</a></div>';columns[0].append(group);
+ }
+ nav.addEventListener('click',e=>{if(!e.target.closest('a'))return;nav.querySelectorAll('.nav-dropdown').forEach(d=>d.open=false);nav.classList.remove('open');const toggle=document.querySelector('.menu-toggle');if(toggle){toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation');}});
+})();
+
 // Keep service categories expanded on desktop and individually expandable on mobile.
 (()=>{
  const nav=document.querySelector('#navigation');

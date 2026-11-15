@@ -481,6 +481,30 @@
     {
       "source": "/sg/sip-trunk-pricing-estimator/",
       "destination": "/sip-trunk-pricing-estimator.html"
+    },
+    {
+      "source": "/sg/backup-recovery-singapore/",
+      "destination": "/backup-recovery-singapore.html"
+    },
+    {
+      "source": "/sg/odoo-erp-crm-singapore/",
+      "destination": "/odoo-erp-crm-singapore.html"
+    },
+    {
+      "source": "/sg/enterprise-workflow-solutions-singapore/",
+      "destination": "/enterprise-workflow-solutions-singapore.html"
+    },
+    {
+      "source": "/sg/application-development-singapore/",
+      "destination": "/application-development-singapore.html"
+    },
+    {
+      "source": "/sg/huawei-networking-singapore/",
+      "destination": "/huawei-networking-singapore.html"
+    },
+    {
+      "source": "/sg/tenable-licensing-singapore/",
+      "destination": "/tenable-licensing-singapore.html"
     }
   ]
 }
