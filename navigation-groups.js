@@ -29,3 +29,42 @@
  const info=[...footer.querySelectorAll('.footer-grid>div')].find(d=>d.querySelector('h3')?.textContent==='Company & Resources');
  if(info){[['SIP Spending Calculator','sip-trunk-pricing-estimator'],['Partner Application','become-a-partner']].forEach(([label,slug])=>{if(!info.querySelector('a[href="/sg/'+slug+'/"]')){const a=document.createElement('a');a.href='/sg/'+slug+'/';a.textContent=label;info.append(a);}});}
 })();
+
+// Derive footer navigation from the header so categories and labels stay aligned.
+(()=>{
+ const nav=document.querySelector('#navigation');
+ const grid=document.querySelector('footer .footer-grid');
+ if(!nav||!grid)return;
+ const brand=grid.querySelector('.footer-brand');
+ if(!brand)return;
+ const makeGroup=(source)=>{
+  const group=document.createElement('details');group.className='footer-nav-group';
+  const heading=document.createElement('summary');
+  const original=source.querySelector(':scope > summary');
+  heading.textContent=[...original.childNodes].filter(n=>n.nodeType===3).map(n=>n.textContent).join('').trim();
+  group.append(heading);
+  const links=document.createElement('div');links.className='footer-group-links';
+  source.querySelectorAll('a[href]').forEach(a=>{const copy=a.cloneNode(true);copy.querySelectorAll('small,span[aria-hidden]').forEach(n=>n.remove());copy.removeAttribute('class');copy.textContent=copy.textContent.trim();links.append(copy);});
+  group.append(links);return group;
+ };
+ grid.replaceChildren(brand);grid.className='container footer-grid footer-matched';
+ nav.querySelectorAll('.service-menu-column').forEach(column=>{
+  const dest=document.createElement('div');dest.className='footer-service-column';
+  column.querySelectorAll('.service-menu-group').forEach(group=>dest.append(makeGroup(group)));
+  grid.append(dest);
+ });
+ const directory=document.createElement('div');directory.className='footer-directory';
+ nav.querySelectorAll(':scope > .nav-dropdown:not(.services-menu)').forEach(source=>{
+  const group=makeGroup(source);
+  if(group.querySelector('summary').textContent==='Company'){
+   const a=document.createElement('a');a.href='/sg/become-a-partner/';a.textContent='Partner Application';group.querySelector('.footer-group-links').append(a);
+  }
+  directory.append(group);
+ });
+ grid.append(directory);
+ const mobile=matchMedia('(max-width:700px)');
+ const groups=[...grid.querySelectorAll('.footer-nav-group')];
+ const sync=()=>groups.forEach(g=>g.open=!mobile.matches);
+ groups.forEach(g=>g.querySelector('summary').addEventListener('click',e=>{if(!mobile.matches)e.preventDefault();}));
+ mobile.addEventListener('change',sync);sync();
+})();
