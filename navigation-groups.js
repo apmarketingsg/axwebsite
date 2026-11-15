@@ -19,3 +19,13 @@
  const cloud=document.querySelector('#navigation a[href="/sg/cloud-connectivity-singapore/"] small');
  if(cloud) cloud.textContent="Private access to supported clouds";
 })();
+
+// Keep legal, calculator and application links at their existing public paths.
+(()=>{
+ const slugs=['privacy-policy','general-terms-of-use','sip-trunk-pricing-estimator','become-a-partner'];
+ document.querySelectorAll('a[href]').forEach(a=>{try{const u=new URL(a.href);if(u.hostname==='axclusive.com'&&slugs.some(s=>u.pathname==='/sg/'+s+'/'))a.setAttribute('href',u.pathname+u.search+u.hash);}catch{}});
+ const footer=document.querySelector('footer');if(!footer)return;
+ const brand=footer.querySelector('.footer-brand');if(brand&&!brand.querySelector('.footer-social')){const social=document.createElement('div');social.className='footer-social';social.innerHTML='<a href="https://www.linkedin.com/company/axclusiveisp">LinkedIn</a><a href="https://www.facebook.com/axclusiveisp">Facebook</a>';brand.append(social);}
+ const info=[...footer.querySelectorAll('.footer-grid>div')].find(d=>d.querySelector('h3')?.textContent==='Company & Resources');
+ if(info){[['SIP Spending Calculator','sip-trunk-pricing-estimator'],['Partner Application','become-a-partner']].forEach(([label,slug])=>{if(!info.querySelector('a[href="/sg/'+slug+'/"]')){const a=document.createElement('a');a.href='/sg/'+slug+'/';a.textContent=label;info.append(a);}});}
+})();

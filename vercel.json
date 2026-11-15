@@ -9,6 +9,28 @@
       "source": "/",
       "destination": "/sg/",
       "permanent": false
+    },
+    {
+      "source": "/sg/sip-trunk-pricing-estimator/",
+      "destination": "https://axclusive.com/sg/sip-trunk-pricing-estimator/",
+      "permanent": false,
+      "has": [
+        {
+          "type": "host",
+          "value": "ax-website-preview.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/sg/become-a-partner/",
+      "destination": "https://axclusive.com/sg/become-a-partner/",
+      "permanent": false,
+      "has": [
+        {
+          "type": "host",
+          "value": "ax-website-preview.vercel.app"
+        }
+      ]
     }
   ],
   "headers": [
@@ -458,6 +480,14 @@
     {
       "source": "/sg/cloud-connectivity-singapore/",
       "destination": "/cloud-connectivity-singapore.html"
+    },
+    {
+      "source": "/sg/privacy-policy/",
+      "destination": "/privacy-policy.html"
+    },
+    {
+      "source": "/sg/general-terms-of-use/",
+      "destination": "/general-terms-of-use.html"
     }
   ]
 }
