@@ -98,6 +98,18 @@
     {
       "source": "/sg/colocation/",
       "destination": "/colocation.html"
+    },
+    {
+      "source": "/sg/about/",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/sg/partners/",
+      "destination": "/partners.html"
+    },
+    {
+      "source": "/sg/contact-us/",
+      "destination": "/contact-us.html"
     }
   ]
 }
