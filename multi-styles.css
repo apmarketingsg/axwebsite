@@ -1,1 +1,23 @@
 .connection-visual{padding:30px 12px;text-align:center}.connection-destinations{display:flex;gap:10px;justify-content:center}.connection-destinations span{flex:1;background:#fff;border:1px solid #d4b28e;border-radius:14px;padding:18px 8px;font-size:14px;font-weight:700}.connection-spine,.connection-cpe{position:relative;border:1px solid #be7d4a;border-radius:15px;padding:22px 12px;margin:35px auto 0;max-width:300px;background:#fff8ee;font-weight:700}.connection-spine:before,.connection-cpe:before{content:"";position:absolute;width:2px;height:35px;background:#be7d4a;left:50%;top:-36px}.connection-cpe{background:#b85b25;color:white}.connection-visual small{font-size:12px;font-weight:400}.connection-visual p{font-size:12px;margin:22px auto 0}.related-options .text-link{display:block;margin-bottom:12px}@media(max-width:480px){.connection-destinations{gap:6px}.connection-destinations span{font-size:12px;padding:14px 6px}}
+/* One access circuit, separate physical service ports at the customer site. */
+.connection-visual{padding:20px 0;text-align:center;min-width:0}
+.connection-network{border:1px solid #be7d4a;border-radius:15px;padding:18px 12px;max-width:330px;margin:auto;background:#fff8ee;font-weight:700}
+.connection-network small,.connection-device small{display:block;margin-top:6px;line-height:1.5}
+.connection-circuit{height:72px;position:relative;display:flex;align-items:center;justify-content:center}
+.connection-circuit:before{content:"";position:absolute;top:0;bottom:0;left:50%;width:2px;background:#be7d4a}
+.connection-circuit span{position:relative;background:#fff8ee;border:1px solid #d4b28e;border-radius:20px;padding:6px 12px;font-size:12px;font-weight:700}
+.connection-site{border:1px solid #d4b28e;border-radius:18px;background:rgba(255,255,255,.65);padding:18px 12px 16px}
+.connection-site-label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#94501f;font-weight:700;margin-bottom:12px}
+.connection-device{border-radius:12px;background:#b85b25;color:#fff;padding:16px 10px;font-size:15px;font-weight:700;max-width:330px;margin:auto}
+.connection-ports{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;position:relative;padding-top:38px}
+.connection-ports:before{content:"";position:absolute;left:50%;top:0;height:19px;border-left:2px solid #be7d4a}
+.connection-ports:after{content:"";position:absolute;left:calc((100% - 16px)/6);right:calc((100% - 16px)/6);top:18px;border-top:2px solid #be7d4a}
+.connection-port{position:relative;background:#fff;border:1px solid #d4b28e;border-radius:12px;padding:12px 5px;display:flex;align-items:center;flex-direction:column;gap:7px;min-width:0}
+.connection-port:before{content:"";position:absolute;left:50%;height:20px;border-left:2px solid #be7d4a;top:-21px}
+.connection-port .port-number{font-size:10px;color:#94501f;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.port-socket{display:block;width:24px;height:18px;border:2px solid #b85b25;border-radius:3px;position:relative}
+.port-socket:after{content:"";position:absolute;left:5px;right:5px;bottom:-2px;height:5px;background:#fff;border:2px solid #b85b25;border-top:0}
+.connection-port strong{font-size:13px;line-height:1.4}
+.connection-port small{font-size:11px;line-height:1.4;color:#666}
+.connection-visual>p{font-size:11px;line-height:1.6;margin:14px auto 0;max-width:420px}
+@media(max-width:480px){.connection-site{padding:15px 8px 12px}.connection-ports{gap:6px}.connection-ports:after{left:calc((100% - 12px)/6);right:calc((100% - 12px)/6)}.connection-port strong{font-size:12px}.connection-port small{font-size:10px}.connection-device{font-size:14px}}
