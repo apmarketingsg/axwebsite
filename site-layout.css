@@ -104,3 +104,11 @@ footer .footer-nav-group summary:focus-visible{outline:2px solid #ef9e65;outline
  .has-whatsapp-shortcut:after{content:'';position:fixed;left:0;right:0;bottom:0;height:calc(76px + env(safe-area-inset-bottom,0px));background:#fff;border-top:1px solid #eee5de;z-index:43;pointer-events:none}
  .contact-shortcut-hidden:after{display:none}
 }
+
+/* Customer-focused service discovery; independent of vendor catalogue styles. */
+.service-discovery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.service-discovery-card{display:flex;flex-direction:column;gap:14px;min-width:0;padding:28px;border:1px solid #ded7cf;border-radius:20px;background:#fff;color:#161616;text-decoration:none}
+.service-discovery-card h3{margin:0;font-size:24px;line-height:1.35}.service-discovery-card p{margin:0;color:#626262;line-height:1.75;font-size:16px}
+.service-discovery-card>span{margin-top:auto;padding-top:8px;color:#a54e1e;font-weight:700;font-size:14px;line-height:1.6}
+.service-discovery-card:hover{border-color:#b45920;background:#fffaf4}.service-discovery-card:focus-visible{outline:3px solid #a54e1e;outline-offset:4px}
+@media(max-width:700px){.service-discovery-grid{grid-template-columns:1fr;gap:16px}.service-discovery-card{padding:22px}.service-discovery-card h3{font-size:22px}}
