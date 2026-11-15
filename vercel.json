@@ -418,6 +418,22 @@
     {
       "source": "/sg/resources/blog/rtt-in-networking/",
       "destination": "/article-rtt-in-networking.html"
+    },
+    {
+      "source": "/sg/it-products-licensing-singapore/",
+      "destination": "/it-products-licensing-singapore.html"
+    },
+    {
+      "source": "/sg/fortinet-solutions-singapore/",
+      "destination": "/fortinet-solutions-singapore.html"
+    },
+    {
+      "source": "/sg/palo-alto-networks-singapore/",
+      "destination": "/palo-alto-networks-singapore.html"
+    },
+    {
+      "source": "/sg/microsoft-365-singapore/",
+      "destination": "/microsoft-365-singapore.html"
     }
   ]
 }
