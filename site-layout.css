@@ -25,3 +25,25 @@ header .dropdown .nav-group-label{display:block;padding:12px 14px 6px;font-size:
 
 /* Four clearly separated contact routes, with a labelled enquiry selector. */
 .contact-enquiry-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-enquiry-cards article{scroll-margin-top:120px}.contact-enquiry-cards article>.text-link{margin-top:0;padding-top:10px}.contact-enquiry-cards article>.text-link:first-of-type{margin-top:auto}.contact-enquiry-cards article>.text-link:last-child{margin-top:0}#quote-form select{display:block;width:100%;min-width:0;padding:14px;border:1px solid #d8d8d8;border-radius:8px;background:#fff;color:#222;font:inherit;margin-top:8px}@media(max-width:800px){.contact-enquiry-cards{grid-template-columns:1fr}#quote-form select{font-size:14px}}
+
+/* Grouped Services mega-menu and compact category navigation. */
+header .services-menu .dropdown{padding:24px}
+header .service-menu-group>summary{font-size:12px;font-weight:700;letter-spacing:.04em;color:#a54e1e;line-height:1.5;list-style:none;padding:0 12px 10px;white-space:normal!important}
+header .service-menu-group>summary::-webkit-details-marker{display:none}
+header .service-menu-group a{font-size:14px;line-height:1.45;padding:9px 12px}
+header .service-menu-group a small{display:block;font-size:12px;font-weight:400;color:#706860;line-height:1.5;margin-top:5px}
+@media(min-width:1181px){
+ header .services-menu{position:static}
+ header .services-menu>.dropdown{position:absolute;top:calc(100% - 1px);left:50%;transform:translateX(-50%);width:min(1160px,calc(100vw - 64px));display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 26px;max-height:calc(100dvh - 115px)}
+ header .service-menu-group>summary{cursor:default;pointer-events:none}
+ header .service-menu-group{min-width:0}
+}
+@media(max-width:1180px){
+ header .services-menu>.dropdown{padding:6px 12px}
+ header .service-menu-group{border-bottom:1px solid #e8e0d8;padding:5px 0}
+ header .service-menu-group:last-child{border-bottom:0}
+ header .service-menu-group>summary{padding:14px 24px 14px 4px;position:relative;font-size:13px;cursor:pointer}
+ header .service-menu-group>summary:after{content:'+';position:absolute;right:4px;top:13px;font-size:18px}
+ header .service-menu-group[open]>summary:after{content:'−'}
+ header .service-menu-group>div{padding-bottom:10px}
+}
