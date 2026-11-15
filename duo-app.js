@@ -15,7 +15,7 @@ const status=document.querySelector('#form-status');
 function enquiry(){
  const data=new FormData(form);
  const entries=[['Name','name'],['Company','company'],['Applications to protect','location'],['Approximate user count','bandwidth'],['Requirements','requirements']];
- return 'Hello Axclusive, I would like a Cisco Duo deployment discussion.\n\n'+entries.map(([label,key])=>data.get(key).trim()?label+': '+data.get(key).trim():'').filter(Boolean).join('\n');
+ return 'Hello Axclusive, I would like to enquire about Cisco Duo subscriptions, renewals or a managed access service.\n\n'+entries.map(([label,key])=>data.get(key).trim()?label+': '+data.get(key).trim():'').filter(Boolean).join('\n');
 }
 form.addEventListener('submit',e=>{
  e.preventDefault();
