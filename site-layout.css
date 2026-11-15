@@ -22,3 +22,6 @@ header .dropdown .nav-group-label{display:block;padding:12px 14px 6px;font-size:
 @media(min-width:1181px){header .dropdown{max-height:calc(100dvh - 115px);overflow-y:auto;overscroll-behavior:contain}}
 
 .audience-links .audience-hub-link{padding-bottom:12px;border-bottom:1px solid #e8e0d8}
+
+/* Four clearly separated contact routes, with a labelled enquiry selector. */
+.contact-enquiry-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-enquiry-cards article{scroll-margin-top:120px}.contact-enquiry-cards article>.text-link{margin-top:0;padding-top:10px}.contact-enquiry-cards article>.text-link:first-of-type{margin-top:auto}.contact-enquiry-cards article>.text-link:last-child{margin-top:0}#quote-form select{display:block;width:100%;min-width:0;padding:14px;border:1px solid #d8d8d8;border-radius:8px;background:#fff;color:#222;font:inherit;margin-top:8px}@media(max-width:800px){.contact-enquiry-cards{grid-template-columns:1fr}#quote-form select{font-size:14px}}
