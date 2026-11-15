@@ -450,6 +450,10 @@
     {
       "source": "/sg/businesses-enterprises/",
       "destination": "/businesses-enterprises.html"
+    },
+    {
+      "source": "/sg/international-private-line-iplc-iepl/",
+      "destination": "/international-private-line-iplc-iepl.html"
     }
   ]
 }
