@@ -1,6 +1,12 @@
 # Axclusive preview — production handoff
 
-Updated 16 November 2026. This is a static HTML/CSS/JavaScript website deployed to Vercel from GitHub, with 127 configured page routes and 126 sitemap entries. Existing service and article URLs are preserved. It is not a Next.js application.
+Updated 17 November 2026. This is a static HTML/CSS/JavaScript website deployed to Vercel from GitHub, with 127 configured page routes and 126 sitemap entries. Existing service and article URLs are preserved. It is not a Next.js application.
+
+## Developer handover — start here
+
+Read the [Developer Handover: Vercel to Own Hosting](DEVELOPER-HANDOVER-OWN-HOSTING.md) before moving this site. It includes the full page-routing and redirect manifests, Apache/Nginx examples, image migration, form and partner-application dependencies, production-only indexing changes, testing and rollback steps.
+
+Use it alongside the [Production Launch Checklist](PRODUCTION-LAUNCH-CHECKLIST.md). The handover describes required migration work; it does not mean the unresolved launch dependencies are complete.
 
 ## Preview safety
 
