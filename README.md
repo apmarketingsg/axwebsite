@@ -1,24 +1,25 @@
-# Axclusive preview — launch handoff
+# Axclusive preview — production handoff
 
-Updated 15 November 2026. The preview contains 99 HTML pages, including all 75 Blog and Insights articles; legal pages, the calculator and some legacy pages still need preservation.
+Updated 16 November 2026. This is a static HTML/CSS/JavaScript website deployed to Vercel from GitHub, with 127 configured page routes and 126 sitemap entries. Existing service and article URLs are preserved. It is not a Next.js application.
 
-## Preview behaviour
-All pages intentionally retain noindex/nofollow metadata, the Vercel X-Robots-Tag header and robots.txt Disallow: /. Canonical URLs point to their intended axclusive.com destinations. The sitemap lists the 99 intended production URLs; merge these into the complete production sitemap at launch. Social previews use the published preview logo asset; update og:image to the production asset URL when migrating.
+## Preview safety
 
-The top navigation and footer expose Managed SD-WAN and Global SD-WAN Coverage. Both SD-WAN hero sections have direct map links. Map popups describe availability as subject to confirmation.
+Keep all three indexing blocks: HTML noindex/nofollow, Vercel X-Robots-Tag, and robots.txt Disallow: /. Remove them only for an approved production deployment. Canonicals and social-image metadata use the intended axclusive.com URLs. New social assets must be deployed to that domain before sharing/indexing checks at launch. Legal and privacy pages were intentionally left unchanged, including their metadata.
 
-## Required before main-site migration
-- Preserve remaining legal, SIP calculator, promotion, application-development, client brochure and /sg/become-a-partner/ pages and all existing assets. The Blog and Insights articles are now included. Do not replace the entire existing site with this folder.
-- Retain existing URLs wherever possible. Prepare permanent redirects only for URLs that change; verify legacy traffic and backlinks against the full production sitemap/Search Console export.
-- Remove all three indexing restrictions only on production. Keep the preview blocked.
-- Enquiry forms prepare WhatsApp messages; they do not store submissions, send email or integrate with a CRM. Verify receipt using an approved test and agree the lead-handling process.
-- Configure the chosen analytics property and conversion events; no analytics account identifier is currently supplied.
-- Add approved customer proof and public certification/licence references when supplied; do not invent endorsements or licence numbers.
-- Compress the lazy-loaded 1.23 MB IP-transit network diagram while preserving readable labels.
+## Latest readiness changes
 
-## Checks completed
-17 pages checked at 390px, plus homepage, both SD-WAN pages, Singapore directory, DIA and SIP pages at 320px. No persistent page overflow found. Mobile menu and map popup tested. Internal link/anchor/asset references checked. Production canonical URLs corrected across all pages.
-Network spot checks confirmed gzip HTML, 200 responses, and retained noindex response headers. This is not a throttled Lighthouse audit or real-user Core Web Vitals measurement.
+- 427 legacy CDN image assets copied locally, including responsive variants and the ISO badge. Non-legal pages and shared scripts use local asset paths.
+- Explicit legacy article alias redirects; permanent homepage redirect; known Resources and mixed-case About aliases.
+- Branded 404.html with navigation, and an AX monogram SVG favicon.
+- Consistent organization references and public contact details. Article bylines link to About; real publication dates and existing editorial modification dates retained.
+- Three backup/recovery guides and the refreshed SD-WAN comparison included. ERP selection and Odoo cost guides remain on hold.
 
-## Article migration and navigation
-All 72 Blog and 3 Insights articles are included at their original paths. Normalized body text was compared to production and matched for all 75; original headings, publication dates and media were retained. Article images still use the existing public Axclusive CDN, which must remain available during migration. Existing claims were preserved, not revalidated as current promises. Navigation now separates Connectivity, Managed IT, Security, Business Voice, Resources and Company.
+## Production dependencies
+
+Read [PRODUCTION-LAUNCH-CHECKLIST.md](PRODUCTION-LAUNCH-CHECKLIST.md) before cutover. Enquiry forms currently prepare WhatsApp messages; they do not store leads or send email. The partner application still redirects to the current production backend. Confirm sales delivery, application handling, analytics, domain redirects, DNS/mail preservation and rollback before replacing the main website.
+
+Promotion and client-brochure URLs need a restore/retire decision. Do not redirect unrelated pages to the homepage. Do not remove the old CDN until any other consumers are checked. Review inherited article claims separately from this technical migration.
+
+## Verification scope
+
+Local desktop and mobile layout/asset checks, internal route checks, legal-file hash checks, JSON-LD parsing and post-deployment HTTP checks are recorded in the working audit folder. These are not real-user Core Web Vitals or real-device Safari/Android measurements. Form delivery and analytics require the final account configuration and authorised test submissions.
