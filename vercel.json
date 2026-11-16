@@ -529,6 +529,18 @@
     {
       "source": "/sg/resources/blog/3cx-alternative-singapore/",
       "destination": "/article-3cx-alternative-singapore.html"
+    },
+    {
+      "source": "/sg/resources/blog/rto-vs-rpo/",
+      "destination": "/article-rto-vs-rpo.html"
+    },
+    {
+      "source": "/sg/resources/blog/microsoft-365-backup-singapore/",
+      "destination": "/article-microsoft-365-backup-singapore.html"
+    },
+    {
+      "source": "/sg/resources/blog/immutable-backup/",
+      "destination": "/article-immutable-backup.html"
     }
   ]
 }
