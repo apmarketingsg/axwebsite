@@ -525,6 +525,10 @@
     {
       "source": "/sg/resources/blog/cisco-licensing-renewals-checklist/",
       "destination": "/article-cisco-licensing-renewals-checklist.html"
+    },
+    {
+      "source": "/sg/resources/blog/3cx-alternative-singapore/",
+      "destination": "/article-3cx-alternative-singapore.html"
     }
   ]
 }
