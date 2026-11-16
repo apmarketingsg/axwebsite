@@ -505,6 +505,10 @@
     {
       "source": "/sg/tenable-licensing-singapore/",
       "destination": "/tenable-licensing-singapore.html"
+    },
+    {
+      "source": "/sg/homepage-blue-preview/",
+      "destination": "/homepage-blue-preview.html"
     }
   ]
 }
