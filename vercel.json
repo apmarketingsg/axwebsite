@@ -509,6 +509,22 @@
     {
       "source": "/sg/homepage-blue-preview/",
       "destination": "/homepage-blue-preview.html"
+    },
+    {
+      "source": "/sg/resources/blog/private-connectivity-comparison/",
+      "destination": "/article-private-connectivity-comparison.html"
+    },
+    {
+      "source": "/sg/resources/blog/office-phone-systems-singapore/",
+      "destination": "/article-office-phone-systems-singapore.html"
+    },
+    {
+      "source": "/sg/resources/blog/data-centre-connectivity-checklist/",
+      "destination": "/article-data-centre-connectivity-checklist.html"
+    },
+    {
+      "source": "/sg/resources/blog/cisco-licensing-renewals-checklist/",
+      "destination": "/article-cisco-licensing-renewals-checklist.html"
     }
   ]
 }
