@@ -112,7 +112,7 @@ The current conditional redirect applies only on `ax-website-preview.vercel.app`
 - Enable compression for text assets. Cache hash-named media for a long period; use revalidation/shorter caching for HTML and mutable scripts/styles unless filename versioning is introduced.
 - Confirm production-domain `og:image` and Article image URLs return actual images after deployment. Those URLs already point to axclusive.com for non-legal pages.
 - Keep the old `cdn.axclusive.com.sg` DNS/service until all old-site and external consumers are checked. Legal/privacy pages were excluded from refactoring; inspect any remaining dependencies without rewriting their content.
-- One shared thumbnail mapping in `resources.js` and `articles.js` still uses an external S3 image for the load-balancing article; it returned 200 in the final audit. Localize it or explicitly preserve it before retiring old asset hosting. Legal-page CDN references remain untouched.
+- The load-balancing thumbnail is bundled as `media-load-balancing.png`; `resources.js` and `articles.js` use the local file. Copy it with the other repository assets. Legal-page CDN references remain untouched.
 - A new CDN is optional. The server can serve these files directly. If introducing one, test CORS, caching and asset URL changes separately.
 
 ## 6. Forms, WhatsApp and calculator
