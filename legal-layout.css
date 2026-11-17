@@ -1,0 +1,24 @@
+/* Legal copy and numbering remain unchanged; presentation only. */
+.legal-document{font-family:Manrope,Arial,sans-serif;font-size:17px;line-height:1.8;max-width:860px;margin-inline:auto;padding-block:40px 88px;overflow-wrap:anywhere}
+.legal-document h1{font-family:inherit;font-size:clamp(32px,4vw,48px);line-height:1.2;letter-spacing:-.035em;margin:0 0 32px}
+.legal-document h2{font-family:inherit;font-size:clamp(23px,2.5vw,28px);line-height:1.35;letter-spacing:-.02em;margin:44px 0 18px;scroll-margin-top:120px}
+.legal-document h3{font-family:inherit;font-size:21px;line-height:1.4;margin:28px 0 14px}
+.legal-document p,.legal-document li{font-family:inherit;font-size:inherit;line-height:1.8}
+.legal-document p{margin:0 0 22px}
+.legal-document ol,.legal-document ul{margin:0 0 24px;padding-inline-start:28px;list-style:revert}
+.legal-document li{margin:0 0 14px;padding-inline-start:4px}
+.legal-document li:last-child{margin-bottom:0}
+.legal-document a{text-decoration:underline;text-underline-offset:3px}
+.legal-document strong{font-weight:700}
+.legal-document>:last-child{margin-bottom:0}
+@media(max-width:1180px){body:has(.legal-document) header #navigation a,body:has(.legal-document) header #navigation summary{min-height:44px;box-sizing:border-box}}
+@media(max-width:600px){
+ body:has(.legal-document) main>.container{width:calc(100% - 40px)}
+ body:has(.legal-document) .breadcrumbs{gap:10px;flex-wrap:wrap;line-height:1.5;margin-bottom:0;padding-block:20px}
+ .legal-document{font-size:16px;padding-block:28px 64px}
+ .legal-document h1{margin-bottom:26px}
+ .legal-document h2{margin-top:34px;margin-bottom:16px;scroll-margin-top:100px}
+ .legal-document p{margin-bottom:20px}
+ .legal-document ol,.legal-document ul{padding-inline-start:23px}
+ body:has(.legal-document) .footer-group-links a{min-height:44px;display:flex;align-items:center;padding-block:10px}
+}
