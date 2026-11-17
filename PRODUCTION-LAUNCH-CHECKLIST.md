@@ -2,7 +2,7 @@
 
 Status: **Outstanding — keep preview noindex.**
 
-Last readiness update: **16 November 2026 (Singapore time)**. Current baseline: 127 configured page routes and 126 sitemap entries. No production cutover or indexing changes were made.
+Last readiness update: **17 November 2026 (Singapore time)**. Current baseline: 127 configured page routes and 126 sitemap entries. No production cutover or indexing changes were made.
 
 This is the working checklist for issues identified in the production-readiness review. Update the checkboxes only after implementation and verification. Continue site improvements on the Vercel preview; do not switch the main domain or remove indexing protections until launch is authorised.
 
@@ -282,3 +282,15 @@ ERP selection and Odoo total-cost guides remain on hold. Legal and privacy sourc
 - Static checks: all referenced local assets present, structured data parses, preview noindex retained, legal/privacy file hashes unchanged.
 - 164 explicit permanent redirects checked locally; the existing host-specific partner application redirect remains separate.
 - Evidence and live deployment verification are recorded in `seo/2026-11-16/launch-fixes/`.
+
+## Redirects and AI-readable directory — 17 November 2026
+
+- [x] Added relevant legacy service, company, blog-index and renamed-article aliases to the existing redirect configuration; preserved all 127 page rewrites and prior redirects. Legal/privacy HTML and metadata are unchanged; their legacy root URL aliases lead to the existing pages.
+- [x] Added `/llms.txt` with current service naming, customer pathways, cloud bandwidth distinctions, core versus extended coverage, voice eligibility and equipment-supply scope. Its links use intended production URLs; keep preview noindex and robots protections.
+- [x] Updated the own-hosting handover redirect manifest. `vercel.json` remains the authoritative configuration; translate it for the destination host.
+- [ ] Verify production-domain `/llms.txt` and every listed destination after cutover. Keep the reviewed date and service summaries accurate as offerings change. This file is optional discovery assistance, not a ranking guarantee.
+- [ ] Configure www/non-www, HTTPS and verified legacy-domain redirects on the final hosting/CDN. Preserve mail DNS and test certificates, query strings and redirect chains. Do not redirect all unknown URLs to the homepage.
+- [ ] Resolve old careers/job, tag archive, `/sg/services/`, promotion and client-brochure URLs with relevant content or intentional retirement. No blanket redirect to unrelated About, Contact or homepage content was added.
+- [ ] Preserve the partner application backend. The root `/become-a-partner/` alias leads to the existing application pathway, not the marketing partner page; the preview-only production-backend redirect remains a launch dependency.
+
+Release validation and live HTTP results are recorded in the working audit folder `seo/2026-11-17/redirects-llms/`. This update does not resolve form delivery, analytics, real-device testing or production indexing approval.

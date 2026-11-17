@@ -1,0 +1,68 @@
+# Axclusive
+
+> Axclusive Pte Ltd is a Singapore-based network operator under AS132337, serving carriers, ISPs, hosting and cloud providers, and businesses and enterprises. Services include connectivity, managed infrastructure, security, business voice, business applications, and equipment and software supply.
+
+Reviewed: 17 November 2026. These links use the intended production domain. Availability, capacity, delivery arrangements, scope, support and pricing are confirmed in each proposal. The linked service pages provide more detail; this directory is not a quotation or SLA.
+
+Axclusive's four core POPs are Singapore, Hong Kong, Marseille and Amsterdam. Extended SD-WAN locations are assessed separately and are not additional Axclusive-owned POPs. Singapore-wide connectivity is subject to address confirmation.
+
+Axclusive is licensed by Singapore's IMDA to provide IP telephony. SIP trunks with Singapore 6xxx numbers are available only to Singapore-registered companies. Office: 8 Ubi Road 2, Zervex #03-27/28, Singapore 408538. Sales and WhatsApp: +65 6011 1719.
+
+## Customers and enquiries
+
+- [Carriers & ISPs](https://axclusive.com/sg/carriers-isps/): wholesale connectivity, routing and capacity requirements; direct enquiries to Axclusive.
+- [Hosting & Cloud Providers](https://axclusive.com/sg/hosting-cloud-providers/): upstream connectivity, interconnection, colocation, content delivery and protection.
+- [Businesses & Enterprises](https://axclusive.com/sg/businesses-enterprises/): office, data centre and cloud connectivity, managed infrastructure, security and voice.
+- [Reseller & SI Partners](https://axclusive.com/sg/partners/): partner enquiries for resellers and system integrators. Telcos, carriers and ISPs can contact Axclusive directly.
+- [Contact Axclusive](https://axclusive.com/sg/contact-us/): discuss requirements and request a quotation.
+
+## Internet, private networks and cloud
+
+- [Dedicated Internet Access](https://axclusive.com/sg/dedicated-internet-access-singapore/): business Internet with fixed bandwidth commitment or agreed 95th-percentile burstable billing.
+- [IP Transit](https://axclusive.com/sg/ip-transit-singapore/): BGP connectivity for carriers, hosting networks and enterprises with routing requirements; IPv4 leasing is also available subject to confirmed scope and availability.
+- [Leased Lines](https://axclusive.com/sg/leased-line-singapore/): private connectivity between buildings, offices and data centres in Singapore.
+- [Data Center Interconnect](https://axclusive.com/sg/data-center-interconnect-singapore/): connect data centres for hosted infrastructure, replication and business continuity.
+- [IPLC / IEPL](https://axclusive.com/sg/international-private-line-iplc-iepl/): 10G and 100G international private circuits, with Ethernet or optical handoff and protected or unprotected options agreed for the route.
+- [Managed Optical Fiber Network (MOFN)](https://axclusive.com/sg/managed-dark-fibre-dwdm-singapore/): dark fibre, DWDM optical equipment and managed service, with protected or unprotected options.
+- [Private Cloud Connectivity](https://axclusive.com/sg/cloud-connectivity-singapore/): AWS Direct Connect, Azure ExpressRoute, Google Cloud Interconnect, Alibaba Cloud and Tencent Cloud requirements; Oracle Cloud, IBM Cloud / SoftLayer, Huawei Cloud, Kingsoft Cloud and UCloud can also be assessed. All destinations are subject to provider, region and delivery availability. Individual cloud connection options can range from 1 Mbps to 10 Gbps; a 1G–100G access circuit does not imply the same bandwidth to each cloud. Cloud connectivity is distinct from cloud hosting or cloud account management.
+- [Multiple Services Single Circuit (MSSC)](https://axclusive.com/sg/multiple-services-connectivity-singapore/): Internet, cloud and private Ethernet on an agreed 1G–100G access circuit. Choose single-port handoff or separate service ports through CPE. Dual circuits can be requested for resilience; individual service capacities are confirmed separately.
+- [Managed SD-WAN](https://axclusive.com/sg/managed-sd-wan-singapore/): Fortinet-based Internet or backbone-enabled SD-WAN. Broadband can be included within managed SD-WAN; standalone business broadband is not offered.
+
+## Coverage, colocation and content delivery
+
+- [Singapore Connectivity Coverage](https://axclusive.com/sg/network-coverage-singapore/): data centre address directory and Singapore-wide access enquiries, subject to address confirmation.
+- [Global SD-WAN Coverage](https://axclusive.com/sg/global-sd-wan-coverage/): four core POPs and extended locations; deployment depends on suitable compute, licensing, routing and access availability.
+- [Server & Network Colocation](https://axclusive.com/sg/colocation/): space, power and connectivity requirements for hosting and enterprise infrastructure.
+- [Managed CDN](https://axclusive.com/sg/managed-cdn-singapore/): Smart DNS steering between contracted CDN providers using real-user monitoring and agreed policies. Market-specific weights such as 80/20 and a healthy 50/50 baseline are illustrative targets, not guaranteed exact traffic splits.
+
+## Security, managed infrastructure and recovery
+
+- [DDoS Protection](https://axclusive.com/sg/ddos-protection/): opt-in Always-On Cloudflare Magic Transit for DIA customers. Network-layer protection is distinct from application-layer WAF services; address and routing arrangements are confirmed in the proposal.
+- [Cisco Duo / Secure Access](https://axclusive.com/sg/cisco-duo-singapore/): MFA and secure-access product options, licences and renewals; features depend on the chosen edition and solution scope.
+- [Managed Infrastructure & IT](https://axclusive.com/sg/managed-services-singapore/): networks, SD-WAN, servers, operating systems, applications, databases, patching and service management, with customer-success responsibilities and SLA agreed for the service. Cloud environments may form part of the managed scope.
+- [Backup & Recovery](https://axclusive.com/sg/backup-recovery-singapore/): Druva backup with included AWS-hosted cloud storage, or NAKIVO with Axclusive-managed S3-compatible storage. Workloads, retention, recovery targets and responsibilities are agreed in the proposal.
+
+## Business voice
+
+- [SIP Trunking](https://axclusive.com/sg/sip-trunking/): Singapore business voice and integration with Axclusive Cloud PBX, Microsoft Teams and Webex services. These Axclusive-delivered solutions do not require a separate customer voice gateway; third-party PBX compatibility is assessed separately.
+- [Managed Cloud PBX](https://axclusive.com/sg/managed-cloud-pbx-singapore/): Yeastar-powered cloud PBX managed by Axclusive with SIP service and hosted infrastructure in the agreed package. Number porting is charged separately. Standard 8×5 support has a four-hour response target; optional 24×7 support has a four-hour response target. Response targets are not resolution guarantees.
+- [Microsoft Teams Calling](https://axclusive.com/sg/teams-calling/): Direct Routing with Axclusive SIP integration and no separate customer voice gateway; confirm Microsoft licensing and service scope.
+- [Webex Calling](https://axclusive.com/sg/webex-calling/): Axclusive SIP integration without a separate customer voice gateway; confirm subscriptions and service scope.
+- [SIP Trunk Pricing Estimator](https://axclusive.com/sg/sip-trunk-pricing-estimator/): estimate pricing using the calculator's current selections and terms; final requirements are confirmed with Axclusive.
+
+## Business applications
+
+- [Odoo ERP & CRM](https://axclusive.com/sg/odoo-erp-crm-singapore/): discuss business workflows, modules, integrations and an agreed project scope.
+- [Enterprise Workflow Solutions](https://axclusive.com/sg/enterprise-workflow-solutions-singapore/): ServiceNow-related business workflow requirements, subject to agreed products and delivery scope.
+- [Application Development](https://axclusive.com/sg/application-development-singapore/): separately scoped custom applications, integrations and business workflow development.
+
+## Equipment, software and renewals
+
+- [IT Equipment & Software Supply](https://axclusive.com/sg/it-products-licensing-singapore/): equipment, software subscriptions and renewals, including Cisco, Fortinet, Palo Alto Networks, Huawei, Microsoft 365, Dell and Tenable. Product procurement does not automatically include standalone implementation or support; these are agreed within managed-service or voice solutions.
+- [Cisco Products, Licences & Renewals](https://axclusive.com/sg/cisco-network-solutions/): certified Networking Partner with a certified Managed Services Practice; competitive pricing is quoted for the requested products and terms.
+
+## Company and resources
+
+- [About Axclusive](https://axclusive.com/sg/about/): company background, network operations and customer focus.
+- [Blog](https://axclusive.com/sg/resources/blog/): guides to networking, private connectivity, optical networks, security, voice and recovery.
+- [Insights](https://axclusive.com/sg/resources/insights/): routing and connectivity analysis; measurements describe the stated test conditions rather than universal service guarantees.

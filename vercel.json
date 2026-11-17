@@ -835,6 +835,166 @@
       "source": "/favicon.ico",
       "destination": "/favicon.svg",
       "permanent": true
+    },
+    {
+      "source": "/about/",
+      "destination": "/sg/about/",
+      "permanent": true
+    },
+    {
+      "source": "/application-development-singapore/",
+      "destination": "/sg/application-development-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "/sg/contact-us/",
+      "permanent": true
+    },
+    {
+      "source": "/data-center-interconnect-singapore/",
+      "destination": "/sg/data-center-interconnect-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/dedicated-internet-access-singapore/",
+      "destination": "/sg/dedicated-internet-access-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/ip-transit-singapore/",
+      "destination": "/sg/ip-transit-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/leased-line-singapore/",
+      "destination": "/sg/leased-line-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/managed-cdn-singapore/",
+      "destination": "/sg/managed-cdn-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/managed-services-singapore/",
+      "destination": "/sg/managed-services-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/multiple-services-connectivity-singapore/",
+      "destination": "/sg/multiple-services-connectivity-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy/",
+      "destination": "/sg/privacy-policy/",
+      "permanent": true
+    },
+    {
+      "source": "/general-terms-of-use/",
+      "destination": "/sg/general-terms-of-use/",
+      "permanent": true
+    },
+    {
+      "source": "/sip-trunking/",
+      "destination": "/sg/sip-trunking/",
+      "permanent": true
+    },
+    {
+      "source": "/teams-calling/",
+      "destination": "/sg/teams-calling/",
+      "permanent": true
+    },
+    {
+      "source": "/webex-calling/",
+      "destination": "/sg/webex-calling/",
+      "permanent": true
+    },
+    {
+      "source": "/ddos-protection/",
+      "destination": "/sg/ddos-protection/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/sg/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/sg/blog/",
+      "destination": "/sg/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/partner/",
+      "destination": "/sg/partners/",
+      "permanent": true
+    },
+    {
+      "source": "/sg/partner/",
+      "destination": "/sg/partners/",
+      "permanent": true
+    },
+    {
+      "source": "/become-a-partner/",
+      "destination": "/sg/become-a-partner/",
+      "permanent": true
+    },
+    {
+      "source": "/high-speed-building-connectivity-singapore/",
+      "destination": "/sg/leased-line-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/services/dia-dedicated-internet-access/",
+      "destination": "/sg/dedicated-internet-access-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/services/ip-transit/",
+      "destination": "/sg/ip-transit-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/services/leased-line/",
+      "destination": "/sg/leased-line-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/services/dc-interconnect/",
+      "destination": "/sg/data-center-interconnect-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/services/managed-services/",
+      "destination": "/sg/managed-services-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/services/multiple-services-connectivity/",
+      "destination": "/sg/multiple-services-connectivity-singapore/",
+      "permanent": true
+    },
+    {
+      "source": "/sg/sg/",
+      "destination": "/sg/",
+      "permanent": true
+    },
+    {
+      "source": "/seamless-interconnection-between-equinix-sg1-and-global-switch-wavelength-based-reliable-and-scalable/",
+      "destination": "/sg/resources/blog/are-you-in-equinix-sg-1-and-global-switch-singapore-heres-the-best-way-to-interconnect-your-network/",
+      "permanent": true
+    },
+    {
+      "source": "/are-you-in-equinix-sg-1-and-global-switch-singapore-here-s-the-best-way-to-interconnect-your-network/",
+      "destination": "/sg/resources/blog/are-you-in-equinix-sg-1-and-global-switch-singapore-heres-the-best-way-to-interconnect-your-network/",
+      "permanent": true
+    },
+    {
+      "source": "/demythifying-singapores-connectivity-landscape/",
+      "destination": "/sg/resources/blog/demystifying-internet-in-singapore-5-myths-every-business-should-know/",
+      "permanent": true
     }
   ],
   "headers": [

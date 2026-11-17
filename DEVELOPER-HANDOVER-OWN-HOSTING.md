@@ -11,7 +11,7 @@ Status: **Migration instructions only; production cutover not authorised by this
 - Intended production: https://axclusive.com/sg/
 - Local source: `sites/dia-optimization/` in the Axclusive Website workspace. These files are at the **repository root** in GitHub.
 - Working launch checklist: `PRODUCTION-LAUNCH-CHECKLIST.md` in the repository.
-- Baseline: 127 configured page routes, 126 sitemap entries, 164 permanent redirects and one preview-host-specific temporary partner redirect.
+- Baseline: 127 configured page routes, 126 sitemap entries, 196 permanent redirects and one preview-host-specific temporary partner redirect.
 
 The site is static HTML, CSS and JavaScript. It is not a Next.js application and has no required Node runtime, package build or content database. Vercel currently supplies hosting, URL mapping, redirects and response headers. Apache, Nginx or another static-capable web server can replace it.
 
@@ -526,3 +526,35 @@ Preserve these explicit destinations; apply the conditional partner rule separat
 | `/sg/resources/` | `/sg/resources/blog/` |
 | `/SG/About/` | `/sg/about/` |
 | `/favicon.ico` | `/favicon.svg` |
+| `/about/` | `/sg/about/` |
+| `/application-development-singapore/` | `/sg/application-development-singapore/` |
+| `/contact-us/` | `/sg/contact-us/` |
+| `/data-center-interconnect-singapore/` | `/sg/data-center-interconnect-singapore/` |
+| `/dedicated-internet-access-singapore/` | `/sg/dedicated-internet-access-singapore/` |
+| `/ip-transit-singapore/` | `/sg/ip-transit-singapore/` |
+| `/leased-line-singapore/` | `/sg/leased-line-singapore/` |
+| `/managed-cdn-singapore/` | `/sg/managed-cdn-singapore/` |
+| `/managed-services-singapore/` | `/sg/managed-services-singapore/` |
+| `/multiple-services-connectivity-singapore/` | `/sg/multiple-services-connectivity-singapore/` |
+| `/privacy-policy/` | `/sg/privacy-policy/` |
+| `/general-terms-of-use/` | `/sg/general-terms-of-use/` |
+| `/sip-trunking/` | `/sg/sip-trunking/` |
+| `/teams-calling/` | `/sg/teams-calling/` |
+| `/webex-calling/` | `/sg/webex-calling/` |
+| `/ddos-protection/` | `/sg/ddos-protection/` |
+| `/blog/` | `/sg/resources/blog/` |
+| `/sg/blog/` | `/sg/resources/blog/` |
+| `/partner/` | `/sg/partners/` |
+| `/sg/partner/` | `/sg/partners/` |
+| `/become-a-partner/` | `/sg/become-a-partner/` |
+| `/high-speed-building-connectivity-singapore/` | `/sg/leased-line-singapore/` |
+| `/services/dia-dedicated-internet-access/` | `/sg/dedicated-internet-access-singapore/` |
+| `/services/ip-transit/` | `/sg/ip-transit-singapore/` |
+| `/services/leased-line/` | `/sg/leased-line-singapore/` |
+| `/services/dc-interconnect/` | `/sg/data-center-interconnect-singapore/` |
+| `/services/managed-services/` | `/sg/managed-services-singapore/` |
+| `/services/multiple-services-connectivity/` | `/sg/multiple-services-connectivity-singapore/` |
+| `/sg/sg/` | `/sg/` |
+| `/seamless-interconnection-between-equinix-sg1-and-global-switch-wavelength-based-reliable-and-scalable/` | `/sg/resources/blog/are-you-in-equinix-sg-1-and-global-switch-singapore-heres-the-best-way-to-interconnect-your-network/` |
+| `/are-you-in-equinix-sg-1-and-global-switch-singapore-here-s-the-best-way-to-interconnect-your-network/` | `/sg/resources/blog/are-you-in-equinix-sg-1-and-global-switch-singapore-heres-the-best-way-to-interconnect-your-network/` |
+| `/demythifying-singapores-connectivity-landscape/` | `/sg/resources/blog/demystifying-internet-in-singapore-5-myths-every-business-should-know/` |

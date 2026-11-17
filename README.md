@@ -29,3 +29,7 @@ Promotion and client-brochure URLs need a restore/retire decision. Do not redire
 ## Verification scope
 
 Local desktop and mobile layout/asset checks, internal route checks, legal-file hash checks, JSON-LD parsing and post-deployment HTTP checks are recorded in the working audit folder. These are not real-user Core Web Vitals or real-device Safari/Android measurements. Form delivery and analytics require the final account configuration and authorised test submissions.
+
+## AI-readable service directory and legacy aliases
+
+`llms.txt` contains a reviewed service directory using intended production URLs. Keep it with the static files when migrating hosting. Additional relevant legacy aliases are included in `vercel.json` and the handover manifest. Preview indexing protections remain enabled; outstanding domain redirects and retired-content decisions are recorded in the launch checklist.
