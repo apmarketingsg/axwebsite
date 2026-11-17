@@ -11,7 +11,7 @@ Status: **Migration instructions only; production cutover not authorised by this
 - Intended production: https://axclusive.com/sg/
 - Local source: `sites/dia-optimization/` in the Axclusive Website workspace. These files are at the **repository root** in GitHub.
 - Working launch checklist: `PRODUCTION-LAUNCH-CHECKLIST.md` in the repository.
-- Baseline: 127 configured page routes, 126 sitemap entries, 196 permanent redirects and one preview-host-specific temporary partner redirect.
+- Baseline: 127 configured page routes, 126 sitemap entries, 197 permanent redirects and one preview-host-specific temporary partner redirect.
 
 The site is static HTML, CSS and JavaScript. It is not a Next.js application and has no required Node runtime, package build or content database. Vercel currently supplies hosting, URL mapping, redirects and response headers. Apache, Nginx or another static-capable web server can replace it.
 
@@ -558,3 +558,4 @@ Preserve these explicit destinations; apply the conditional partner rule separat
 | `/seamless-interconnection-between-equinix-sg1-and-global-switch-wavelength-based-reliable-and-scalable/` | `/sg/resources/blog/are-you-in-equinix-sg-1-and-global-switch-singapore-heres-the-best-way-to-interconnect-your-network/` |
 | `/are-you-in-equinix-sg-1-and-global-switch-singapore-here-s-the-best-way-to-interconnect-your-network/` | `/sg/resources/blog/are-you-in-equinix-sg-1-and-global-switch-singapore-heres-the-best-way-to-interconnect-your-network/` |
 | `/demythifying-singapores-connectivity-landscape/` | `/sg/resources/blog/demystifying-internet-in-singapore-5-myths-every-business-should-know/` |
+| `/what-is-an-ethernet-Switch/` | `/sg/resources/blog/what-is-an-ethernet-switch/` |

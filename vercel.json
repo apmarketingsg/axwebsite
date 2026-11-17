@@ -995,6 +995,11 @@
       "source": "/demythifying-singapores-connectivity-landscape/",
       "destination": "/sg/resources/blog/demystifying-internet-in-singapore-5-myths-every-business-should-know/",
       "permanent": true
+    },
+    {
+      "source": "/what-is-an-ethernet-Switch/",
+      "destination": "/sg/resources/blog/what-is-an-ethernet-switch/",
+      "permanent": true
     }
   ],
   "headers": [
