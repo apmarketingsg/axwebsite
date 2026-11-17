@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "axclusive-website",
+  "main": "cloudflare/worker.js",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    // Serve files exactly as named; routing comes from _redirects.
+    "html_handling": "none",
+    "not_found_handling": "none"
+  }
+}
