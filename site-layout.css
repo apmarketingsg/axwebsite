@@ -112,3 +112,28 @@ footer .footer-nav-group summary:focus-visible{outline:2px solid #ef9e65;outline
 .service-discovery-card>span{margin-top:auto;padding-top:8px;color:#a54e1e;font-weight:700;font-size:14px;line-height:1.6}
 .service-discovery-card:hover{border-color:#b45920;background:#fffaf4}.service-discovery-card:focus-visible{outline:3px solid #a54e1e;outline-offset:4px}
 @media(max-width:700px){.service-discovery-grid{grid-template-columns:1fr;gap:16px}.service-discovery-card{padding:22px}.service-discovery-card h3{font-size:22px}}
+
+/* Mobile usability: explicitly exclude legal documents from these additions. */
+@media(max-width:1180px){
+ body:not(:has(.legal-document)) header #navigation a,
+ body:not(:has(.legal-document)) header #navigation summary{min-height:44px;box-sizing:border-box}
+ body:not(:has(.legal-document)) header .service-menu-group a{display:flex;flex-direction:column;justify-content:center}
+ body:not(:has(.legal-document)) .menu-toggle{min-width:44px;min-height:44px}
+}
+@media(max-width:700px){
+ body:not(:has(.legal-document)) input:not([type=checkbox]):not([type=radio]):not([type=range]),
+ body:not(:has(.legal-document)) select,
+ body:not(:has(.legal-document)) textarea{font-size:16px!important}
+ body:not(:has(.legal-document)) :is(button,select,input:not([type=checkbox]):not([type=radio]):not([type=range])){min-height:44px}
+ body:not(:has(.legal-document)) :is(.actions,.audience-links,.audience-service-group,.product-related,.product-reference,.contact-details,.resource-group-heading,.article-toc,.footer-group-links,.footer-bottom,.breadcrumb,.breadcrumbs) a,
+ body:not(:has(.legal-document)) a.text-link{min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center;padding-top:10px;padding-bottom:10px}
+ body:not(:has(.legal-document)) .footer-group-links{gap:2px}
+ body:not(:has(.legal-document)) .footer-group-links a{display:flex}
+ body:not(:has(.legal-document)) :is(.eyebrow,.form-note,.privacy,.service-strip,.nav-group-label){font-size:12px;line-height:1.6}
+ body:not(:has(.legal-document)) .back-top{width:44px;height:44px}
+ body:not(:has(.legal-document)) :is(a,button,summary,input,select,textarea):focus-visible{outline:3px solid #165da6;outline-offset:3px}
+}
+
+@media(max-width:700px){
+ body:not(:has(.legal-document)) :is(.service-note,.private-choice-label,.hub-route span,.connection-site-label,.connection-option-label,.connection-or,.connection-visual small,.connection-visual .port-number,.mofn-equipment small,.mofn-protection small,.mofn-managed-tasks span){font-size:12px;line-height:1.6}
+}

@@ -294,3 +294,19 @@ ERP selection and Odoo total-cost guides remain on hold. Legal and privacy sourc
 - [ ] Preserve the partner application backend. The root `/become-a-partner/` alias leads to the existing application pathway, not the marketing partner page; the preview-only production-backend redirect remains a launch dependency.
 
 Release validation and live HTTP results are recorded in the working audit folder `seo/2026-11-17/redirects-llms/`. This update does not resolve form delivery, analytics, real-device testing or production indexing approval.
+
+## Mobile usability and structured data — 17 November 2026
+
+- [x] Mobile text fields, selects and textareas use at least 16px text on non-legal pages. Enlarged key navigation, action, breadcrumb and footer-link targets; retained inline prose links without excessive padding.
+- [x] Raised small mobile service notes and network-diagram captions to at least 12px. New shared styles explicitly exclude pages containing the legal document template.
+- [x] Blog archive initially shows three articles per topic (22 total), with six-at-a-time expansion and search across all 80 articles. All article links remain in the original HTML and all cards are available without JavaScript. Existing article URLs are unchanged.
+- [x] Added WebPage, BreadcrumbList, WebSite and existing verified Organization details to the coverage directory and SIP pricing estimator. Calculator prices and calculation logic are unchanged.
+- [x] Added 37 missing article dateModified values from existing visible update dates, and corrected one pre-existing mismatch to the visible date. Added 15 missing image values using the banner displayed on those pages. No publication dates or visible update dates were advanced for this metadata work.
+- [x] Checked all 83 article schemas for author, publisher, image, publication/modification date and mainEntityOfPage; JSON parsing and date consistency checks pass. Organization authors remain valid; no unverified people or credentials were added.
+- [x] Checked representative desktop (1280px), phone (390px) and narrow-phone (320px) layouts, mobile menu open/Escape dismissal, blog expansion and full-archive search. No page-width overflow or undersized form text was found in the tested templates.
+- [ ] Verify real iOS Safari / Android form focus, touch interactions and landscape orientation; browser viewport checks are not physical-device certification.
+- [ ] Run Google Rich Results Test / Schema.org validation on representative production pages and confirm production image URLs are accessible. Current checks validate syntax, links and visible-data consistency, not eligibility guarantees.
+- [ ] If named authors/reviewers are wanted, confirm real names, roles, consent and current credentials before creating profiles or changing authorship. Retain Organization authorship until then.
+- [ ] Confirm any additional corporate identifiers, historical company names, licence references and certification evidence before extending Organization markup. Existing verified identity fields were preserved.
+
+Legal/privacy content and metadata remain untouched, including their deliberate schema exclusions. Preview noindex and robots restrictions are retained. Forms, partner backend, analytics and approved production indexing remain separate launch dependencies. Evidence: working audit folder `seo/2026-11-17/mobile-schema/`.
