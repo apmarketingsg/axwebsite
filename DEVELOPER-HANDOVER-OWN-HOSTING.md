@@ -6,7 +6,7 @@ Status: **Migration instructions only; production cutover not authorised by this
 ## 1. Source and baseline
 
 - Repository: https://github.com/ai-webuser/ax-website-preview
-- Verified release: `f8d5bc5ca11d47d1f57609522508b8f3aaa0cbaa`
+- Release selection: use the current reviewed `main` commit containing the final 17 November launch checklist; record its exact hash before migration. Earlier pinned hashes predate the redirect, mobile and schema updates.
 - Preview: https://ax-website-preview.vercel.app/sg/
 - Intended production: https://axclusive.com/sg/
 - Local source: `sites/dia-optimization/` in the Axclusive Website workspace. These files are at the **repository root** in GitHub.
@@ -112,6 +112,7 @@ The current conditional redirect applies only on `ax-website-preview.vercel.app`
 - Enable compression for text assets. Cache hash-named media for a long period; use revalidation/shorter caching for HTML and mutable scripts/styles unless filename versioning is introduced.
 - Confirm production-domain `og:image` and Article image URLs return actual images after deployment. Those URLs already point to axclusive.com for non-legal pages.
 - Keep the old `cdn.axclusive.com.sg` DNS/service until all old-site and external consumers are checked. Legal/privacy pages were excluded from refactoring; inspect any remaining dependencies without rewriting their content.
+- One shared thumbnail mapping in `resources.js` and `articles.js` still uses an external S3 image for the load-balancing article; it returned 200 in the final audit. Localize it or explicitly preserve it before retiring old asset hosting. Legal-page CDN references remain untouched.
 - A new CDN is optional. The server can serve these files directly. If introducing one, test CORS, caching and asset URL changes separately.
 
 ## 6. Forms, WhatsApp and calculator
@@ -183,7 +184,7 @@ Verify sitemap URLs, canonical tags, structured-data IDs, social images and inte
 - [ ] Calculator prices/results unchanged; partner and enquiry submissions arrive at the intended destination.
 - [ ] Preview remains noindex. Production has the approved indexing configuration, without inherited noindex headers at proxy/CDN level.
 - [ ] Legal/privacy copy unchanged; requested metadata exceptions explicitly approved.
-- [ ] Verify company/certification claims and inherited article technical claims, including the flagged legacy MPLS article.
+- [ ] Verify company/certification claims and obtain engineering acceptance of technical content. Previously flagged MPLS/optical/VXLAN corrections are published; do not restore older wording.
 - [ ] No secrets, backups, source-control directories or internal reports are publicly accessible.
 - [ ] Rollback tested and owners sign off.
 
@@ -212,7 +213,7 @@ Test the actual responses and final redirect chains, not just whether the browse
 
 ## 11. Prior verification and remaining work
 
-The 17 November published release passed source comparisons for 127 deployed routes, 164 permanent redirect checks, all 427 migrated media files plus favicon, and branded HTTP 404/noindex checks. Browser checks at 390px and 1280px found no document overflow or broken loaded images. Legal/privacy files were excluded from the release changes.
+The final 17 November review passed source comparisons for all 127 deployed routes, 197 permanent redirect checks, 486 local asset HTTP checks and branded HTTP 404/noindex checks. All 127 routes passed a 390px browser sweep; six representative routes also passed at 1280px. Checks covered document overflow and failed loaded images, not every scrolled section or real-device behavior. All 83 article schemas passed syntax and key-property consistency checks. Legal/privacy files remain byte-for-byte unchanged. See the current launch checklist for test limits and remaining dependencies.
 
 These results apply to Vercel. Repeat acceptance on the destination hosting. Forms/backend delivery, production analytics, final DNS, public credentials, real-device testing and measured Core Web Vitals remain launch dependencies. Refer to `PRODUCTION-LAUNCH-CHECKLIST.md` for the full working list.
 
